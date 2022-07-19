@@ -1,0 +1,447 @@
+    @font-face {
+        font-family: 'Helvetica';
+        /* Font Helvetica estava corrompida*/
+        src: url('../fonts/ps.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'ps';
+        src: url('../fonts/ps.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Light';
+        src: url('../fonts/Roboto-Light_0.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url('../fonts/Roboto-Regular_0.ttf') format('truetype');
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+     :root {
+        --font-family-primary: 'Helvetica';
+        --font-family-secondary: 'ps';
+        --font-family-third: 'Roboto-Regular';
+        --font-family-roboto: 'Roboto-Light';
+        --color-Primary: #29abe2;
+        --color-second: #012d51;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .area-header {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        width: 100%;
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        width: 900px;
+        height: 100px;
+    }
+    
+    .logo a {
+        width: 100px;
+    }
+    
+    nav {
+        display: flex;
+    }
+    
+    .logoimg {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .menu ul,
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu ul {
+        top: 0;
+        display: flex;
+        width: 400px;
+        z-index: 1;
+    }
+    
+    .menu li a {
+        color: #FFF;
+        font-family: var(--font-family-third);
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu .active a {
+        border-bottom: 1px solid #FFF;
+    }
+    
+    .bola {
+        margin-top: 10px;
+        background-color: #FFF;
+        height: 5px;
+        width: 5px;
+        border-radius: 100%;
+    }
+    
+    .menuMobile {
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+    
+    .banner {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/index-image.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        min-height: 70vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
+        height: 100%;
+    }
+    
+    .title,
+    .caption {
+        margin-right: 500px;
+        font-family: var(--font-family-primary);
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    
+    .title {
+        font-size: 7rem;
+    }
+    
+    #registration-area {
+        background-color: var(--color-Primary);
+    }
+    
+    .title-registration {
+        font-family: var(--font-family-primary);
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .form {
+        width: 100%;
+    }
+    
+    .form>label {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color: #FFF;
+        font-family: var(--font-family-third);
+    }
+    
+    input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        background-color: var(--color-Primary);
+        border: 0;
+        border-bottom: 1px solid #FFF;
+        color: #FFF;
+        font-family: var(--font-family-secondary);
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    .button {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: var(--color-second);
+        font-size: 30px;
+        text-transform: uppercase;
+        color: var(--color-Primary);
+        border-bottom: 0;
+        text-align: center;
+        cursor: pointer;
+        font-family: var(--font-family-primary);
+    }
+    
+    .list-area {
+        width: 100%;
+        position: relative;
+    }
+    
+    .list-title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: var(--color-Primary);
+        font-family: var(--font-family-primary);
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    
+    .list {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    
+    table tr th,
+    tbody tr td {
+        margin: 0;
+        width: 180px;
+        color: var(--color-second);
+        font-family: var(--font-family-third);
+        border-left: 1px solid var(--color-Primary);
+        text-align: center;
+        padding: 10px 20px;
+    }
+    
+    table tr th:first-child,
+    tbody tr td:first-child {
+        border-left: 0px solid;
+        width: 80px;
+    }
+    
+    table tr {
+        border-bottom: 1px solid var(--color-Primary);
+    }
+    
+    table tbody td {
+        color: #808080;
+    }
+    
+    table tbody td:first-child {
+        color: var(--color-second);
+        font-family: var(--font-family-roboto);
+    }
+    
+    table tbody tr:last-child {
+        border-bottom: 0px solid;
+    }
+    
+    table tr th:last-child,
+    tbody tr td:last-child {
+        border-bottom: 0px solid;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 50px
+    }
+    
+    .top-img-area {
+        position: absolute;
+        right: 100px;
+        bottom: 50px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer {
+        background-image: url('../images/rodape-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .footer-margin-top {
+        padding-top: 50px;
+    }
+    
+    .footer-info {
+        font-family: var(--font-family-roboto);
+        text-align: center;
+        margin-bottom: 20px;
+        color: #FFF;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    @media (max-width:900px) {
+        .menu ul {
+            position: fixed;
+            padding-top: 100px;
+            top: 0;
+            display: flex;
+            background-color: #29abe2;
+            width: 400px;
+            z-index: 88;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            flex-direction: row-reverse;
+        }
+        .logoimg {
+            width: 400px;
+        }
+        .menu {
+            display: block;
+        }
+        .menu li {
+            margin: 0;
+            padding-left: 40px;
+            padding-bottom: 10px;
+            align-items: center;
+            width: 350px;
+            height: 80px;
+            background-color: #29abe2;
+        }
+        .menu li a {
+            width: 100%;
+            font-size: 30px;
+        }
+        .title,
+        .caption {
+            margin-left: 20%;
+        }
+        ul {
+            width: 200px;
+        }
+        h2.caption {
+            width: 400px;
+        }
+        .bola {
+            display: none;
+        }
+        .banner {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 100vw;
+        }
+        nav ul {
+            flex-direction: column;
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+        header {
+            max-width: 100vw;
+        }
+        .logo {
+            padding-left: 20px;
+        }
+        .menuMobile {
+            z-index: 999;
+            margin-left: 40px;
+            display: block;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .list {
+            margin-bottom: 50px;
+            font-size: 20px;
+            display: flex;
+        }
+        table tr th,
+        tbody tr td {
+            width: 100px;
+            padding: 5px 10px;
+        }
+        table tr th:first-child,
+        tbody tr td:first-child {
+            width: 40px;
+        }
+        footer {
+            padding-bottom: 50px;
+        }
+    }
+    
+    @media (max-width:700px) {
+        .list {
+            overflow-x: scroll;
+        }
+        table {
+            margin: 0px;
+        }
+        .banner {
+            background-image: url('../images/index-image-mobile.jpg');
+        }
+        .footer {
+            background-image: url('../images/rodape-mobile.jpg');
+        }
+        .title,
+        .caption {
+            margin-left: 80%;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width:500px) {
+        .title {
+            margin-top: 0px;
+        }
+        .title,
+        .caption {
+            margin-left: 100%;
+        }
+        .list {
+            height: 100%;
+            position: relative
+        }
+        .table {
+            margin-left: 180px;
+            overflow: auto;
+        }
+    }

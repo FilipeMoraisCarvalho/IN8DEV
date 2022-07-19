@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="./assets/js/js-table.js"></script>
+    <script src="./assets/js/scriptMenu.js"></script>
+    <title>IN8DEV</title>
+</head>
+
+<body>
+
+    <header class="area-header">
+        <div class="header">
+            <div class="logo">
+                <div class="logoimg">
+                    <a href=""><img src="./assets/images/logo-in8-dev.svg" alt=""></a>
+
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menuMobile">
+                    <img src="./assets/images/hamburguer-aberto0.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#registration-area">cadastro</a></li>
+                        <div class="bola"></div>
+                        <li><a href="#lista">lista</a></li>
+                        <div class="bola"></div>
+                        <li><a href="#sobre-mim">sobre mim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="banner">
+        <section id="first">
+            <div class="container">
+
+                <h1 class="title">Estágio</h1>
+                <h2 class="caption">Prova de seleção</h2>
+
+
+            </div>
+
+        </section>
+    </div>
+
+    <section id="registration-area">
+        <div class="container">
+            <div class="title-registration">cadastro</div>
+            <form class="form">
+                <label>
+                    Nome<br/>
+                    <input type="text" id="nome" name="nome">
+                </label>
+                <label>
+                    E-mail<br/>
+                    <input type="text" id="email" name="email"> 
+                </label>
+                <label>
+                    Nascimento<br/>
+                    <input type="text" id="birth" name="birth">
+                </label>
+                <label>
+                    Telefone<br/>
+                    <input type="text" id="telephone" name="telephone">
+                </label>
+
+                <input class="button" type="button" value="cadastrar" onclick="cadastro(nome.value, email.value, birth.value,telephone.value )">
+
+            </form>
+
+        </div>
+    </section>
+
+    <section id="lista" class="list-area">
+        <div class="container">
+            <h2 class="list-title">Lista de cadastro</h2>
+
+            <div class="list-area">
+                <div class="list">
+                    <table id="registered">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Nascimento</th>
+                                <th>Telefone</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Filipe Morais</td>
+                                <td>moraisfelipe10@yahoo.com</td>
+                                <td>02032001</td>
+                                <td>33988055204</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-img-area">
+            <a href=""><img src="./assets/images/topo-pag.svg " width="30px " height="30px " alt=" "></a>
+
+        </div>
+
+    </section>
+
+
+    <footer id="sobre-mim" class="footer ">
+        <div class="container ">
+            <div class="footer-margin-top ">
+                <div class="footer-info ">Filipe Morais Carvalho</div>
+                <div class="footer-info ">moraisfelipe10@yahoo.com</div>
+                <div class="footer-info ">(33) 98805-5204</div>
+                <div class="footer-info ">Centro Universitario de Belo Horizonte</div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
